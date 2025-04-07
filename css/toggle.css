@@ -1,0 +1,124 @@
+/* 햄버거 메뉴 스타일 */
+.hamburger-menu {
+    display: none; /* 기본적으로 숨김 (데스크톱) */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* 활성화된 햄버거 메뉴 애니메이션 */
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* 모바일 대응 */
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: white;
+        padding: 50px 20px;
+        transition: 0.3s;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+}
+
+/* 다크모드 대응 */
+.dark-mode .hamburger-menu span {
+    background-color: #fff;
+}
+
+.dark-mode .nav-menu {
+    background-color: #333;
+}
+
+/* 기존 스타일에 추가 */
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 20px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #007bff;
+}
+
+/* 다크모드 대응 */
+.dark-mode .nav-menu a {
+    color: #fff;
+}
+
+.dark-mode .nav-menu a:hover {
+    color: #66b0ff;
+}
+
+/* 데스크톱 버전 스타일 */
+@media screen and (min-width: 769px) {
+    .nav-menu {
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+}
+
+/* 모바일 버전 스타일 */
+@media screen and (max-width: 768px) {
+    .nav-menu ul {
+        margin-top: 50px;
+    }
+
+    .nav-menu li {
+        text-align: center;
+    }
+
+    #themeToggle {
+        margin-top: 20px;
+    }
+}

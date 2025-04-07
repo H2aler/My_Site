@@ -1,0 +1,941 @@
+/*수민의원 로고*/
+.header {
+    display: flex; /* 플렉스 박스 사용 */
+    align-items: center; /* 세로 중앙 정렬 */
+    padding: 10px 20px; /* 패딩 추가 */
+    background: linear-gradient(to right, #f8f9fa, #ffffff); /* 부드러운 그라데이션 배경 */
+    border-bottom: 1px solid #edf2f7; /* 섬세한 구분선 */
+    position: fixed; /* 고정 헤더 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 최상위로 설정 */
+}
+
+/* 로고 스타일 */
+.logo img {
+    height: 40px; /* 로고 크기 조정 */
+}
+
+.gnb ul {
+    display: flex; /* 플렉스 박스 사용 */
+    list-style: none; /* 리스트 스타일 제거 */
+    padding: 0; /* 패딩 제거 */
+    margin: 0; /* 마진 제거 */
+}
+
+.gnb li {
+    margin: 0 15px; /* 메뉴 항목 간의 간격 */
+}
+
+.gnb a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: #4a5568; /* 기본 텍스트 색상 */
+    font-weight: 500; /* 일반 글씨 두께 */
+    transition: color 0.2s ease;
+}
+
+.gnb a:hover {
+    color: #2b6cb0; /* 호버시 진한 파란색 */
+    background: none; /* 호버 배경 제거 */
+}
+
+.gnb a.active {
+    color: #2b6cb0; /* 활성 메뉴 색상 */
+    font-weight: 600;
+}
+
+/* 내비게이션 바 스타일 */
+.gnb {
+    display: flex; /* 플렉스 박스 사용 */
+    justify-content: center; /* 중앙 정렬 */
+    margin-left: auto; /* 로고와 내비게이션 간격 조정 */
+}
+
+.gnb ul {
+    display: flex; /* 플렉스 박스 사용 */
+    list-style: none; /* 리스트 스타일 제거 */
+    gap: 20px; /* 메뉴 항목 간의 간격 */
+    margin: 0; /* 마진 제거 */
+    padding: 0; /* 패딩 제거 */
+}
+
+.gnb li {
+    position: relative; /* 서브 메뉴를 위한 상대 위치 */
+}
+
+.gnb a {
+    color: #000000; /* 검은색 텍스트 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 1.1rem; /* 글씨 크기를 크게 조정 */
+    font-weight: 500; /* 폰트 두께 조정 */
+    padding: 10px 15px; /* 좌우 여백 추가 */
+    transition: color 0.3s, background-color 0.3s; /* 부드러운 효과 */
+    border-radius: 4px; /* 모서리 둥글게 */
+}
+
+/* 상단 메뉴바 스타일 */
+/* 전체 헤더 스타일 */
+.header {
+    background-color: #F5F5F5; /* 연한 회색 배경 */
+    padding: 1px 0; /* 상단과 하단 여백 감소 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header_inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px; /* 좌우 여백 조정 */
+}
+
+* 로고 스타일 */
+.logo img {
+    height: 40px; /* 로고 크기 조정 */
+}
+
+
+/*메뉴바를 더 작게*/
+/* 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+/*슬라이드 박스 스타일*/
+/* 메인 비주얼 */
+.main_visual {
+    margin-top: 70px; /* 헤더 높이에 맞춰 마진 조정 */
+    position: relative;
+}
+
+.slide {
+    position: relative;
+    height: 600px; /* 기본 높이 */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지 */
+}
+
+.slide_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.slide_text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/*메뉴바를 더 더 작게*/
+/*메뉴바를 더 하얗게*/
+/* 헤더 스타일 */
+.header {
+    display: flex; /* 플렉스 박스 사용 */
+    align-items: center; /* 세로 중앙 정렬 */
+    padding: 10px 20px; /* 패딩 추가 */
+    background-color: #F5F5F5; /* 연한 회색 배경 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    position: fixed; /* 고정 헤더 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 최상위로 설정 */
+}
+
+.header_inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* 메뉴 항목의 세로 크기를 줄이고 일자로 배치 */
+.gnb a {
+    color: #000000; /* 검은색 텍스트 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 1.1rem; /* 글씨 크기를 크게 조정 */
+    font-weight: 500; /* 폰트 두께 조정 */
+    padding: 10px 15px; /* 좌우 여백 추가 */
+    transition: color 0.3s, background-color 0.3s; /* 부드러운 효과 */
+    border-radius: 4px; /* 모서리 둥글게 */
+}
+
+
+/* 메뉴 항목에 마우스 오버 시 효과 */
+.gnb a:hover {
+    color: #041b68; /* 마우스 오버 시 색상 변경 */
+    background-color: rgba(99, 255, 125, 0.301); /* 배경색 변경 */
+}
+
+/* 네이버 지도 링크 스타일 */
+.naver-map-link a {
+    display: flex;
+    align-items: center;
+    font-weight: 400; /* 폰트를 더 얇게 설정 */
+    color: #000000; /* 텍스트 색깔을 검은색으로 설정 */
+}
+
+.naver-icon {
+    margin-left: 5px; /* 아이콘과 텍스트 간격 조정 */
+    width: 16px; /* 아이콘 크기 조정 */
+    height: 16px; /* 아이콘 크기 조정 */
+}
+
+/* 전체 컨테이너 스타일 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #333;
+}
+
+/* 섹션 스타일 */
+.section {
+    background-color: #ffffff;
+    padding: 80px 40px; /* 패딩 증가 */
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px; /* 섹션 간 간격 증가 */
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 500px; /* 최소 높이 설정 */
+}
+
+.section:hover {
+    transform: translateY(-5px); /* 섹션 호버 시 약간 위로 이동 */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* 그림자 효과 강화 */
+}
+
+/* 섹션 내 컨텐츠 스타일 */
+.section_inner {
+    max-width: 1000px; /* 최대 너비 증가 */
+    margin: 0 auto;
+    padding: 20px 0; /* 상하 여백 추가 */
+}
+
+/* 섹션 제목 스타일 */
+.section_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px; /* 하단 여백 증가 */
+    color: #2C3E50;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* 소개 내용 스타일 */
+.intro_content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.intro_content p {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 6px solid #007BFF; /* 왼쪽 강조선 */
+    background-color: #f8f9fa; /* 부드러운 회색 배경 */
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s; /* 호버 효과 추가 */
+}
+
+.intro_content p:hover {
+    background-color: #e9ecef; /* 호버 시 색상 변화 */
+    transform: translateX(5px); /* 호버 시 오른쪽으로 이동 */
+}
+
+/* 진료과목 섹션 스타일 */
+.medical-fields {
+    background-color: #ffffff; /* 배경색 */
+    padding: 60px 40px; /* 상하 및 좌우 패딩 */
+    border-radius: 20px; /* 모서리 둥글게 */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    margin-bottom: 50px; /* 하단 마진 */
+    transition: transform 0.3s, box-shadow 0.3s; /* 상호작용 효과 */
+}
+
+.medical-fields:hover {
+    transform: translateY(-5px); /* 호버 시 약간 위로 이동 */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 강화 */
+}
+
+/* 진료과목 항목 스타일 */
+.fields_container {
+    display: flex; /* Flexbox 사용 */
+    flex-wrap: wrap; /* 항목들이 줄 바꿈 가능하도록 설정 */
+    justify-content: center; /* 중앙 정렬 */
+    gap: 30px; /* 항목 간의 간격 */
+}
+
+.field_item {
+    background-color: #f8f9fa; /* 항목 배경색 */
+    border-radius: 10px; /* 모서리 둥글게 */
+    padding: 20px; /* 패딩 */
+    text-align: center; /* 중앙 정렬 */
+    transition: transform 0.3s, box-shadow 0.3s; /* 상호작용 효과 */
+    width: 250px; /* 고정 너비 */
+}
+
+.field_item:hover {
+    transform: translateY(-5px); /* 호버 시 약간 위로 이동 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* 호버 시 그림자 강화 */
+}
+
+.field_item h3 {
+    font-size: 1.5rem; /* 진료과목 제목 폰트 크기 */
+    color: #2C3E50; /* 깊은 색상 */
+    margin-bottom: 10px; /* 하단 마진 */
+}
+
+.field_item p {
+    font-size: 1rem; /* 설명 텍스트 폰트 크기 */
+    color: #555; /* 설명 텍스트 색상 */
+    line-height: 1.6; /* 줄 간격 */
+}
+
+/* 미디어 쿼리: 작은 화면에서의 반응형 조정 */
+@media (max-width: 768px) {
+    .section_title {
+        font-size: 2rem;
+    }
+
+    .intro_content {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 60px 20px; /* 모바일에서의 패딩 */
+        margin-bottom: 60px; /* 모바일에서의 섹션 간격 */
+        min-height: 400px; /* 모바일에서의 최소 높이 */
+    }
+    
+    .fields_container {
+        flex-direction: column; /* 세로 정렬로 변경 */
+        align-items: center; /* 중앙 정렬 */
+    }
+    
+    .field_item {
+        width: 100%; /* 모바일에서 너비를 100%로 설정 */
+    }
+}
+
+/*진료과목 슬라이드*/
+.swiper-container {
+    width: 100%;
+    height: 400px; /* 슬라이드 높이 설정 */
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.swiper-slide img {
+    width: 100%; /* 이미지 가로폭을 슬라이드에 맞춤 */
+    height: auto; /* 비율 유지 */
+    border-radius: 10px; /* 모서리 둥글게 */
+}
+
+/*진료과목 모달*/
+/* 모달 스타일 */
+.modal {
+    display: none; /* 기본적으로 숨김 */
+    position: fixed; /* 고정 위치 */
+    z-index: 1000; /* 최상위 레이어 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* 스크롤 가능 */
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+}
+
+.modal-content {
+    background-color: #fff; /* 모달 배경색 */
+    margin: 15% auto; /* 중앙 정렬 */
+    padding: 20px;
+    border: 1px solid #888; /* 테두리 */
+    width: 80%; /* 너비 */
+    border-radius: 10px; /* 모서리 둥글게 */
+}
+
+.close-button {
+    color: #aaa; /* 닫기 버튼 색상 */
+    float: right; /* 오른쪽 정렬 */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black; /* 마우스 오버 시 색상 변화 */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Swiper 스타일 */
+.swiper-container {
+    width: 100%;
+    height: 400px; /* 슬라이드 높이 설정 */
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.swiper-slide img {
+    width: 100%; /* 이미지 가로폭을 슬라이드에 맞춤 */
+    height: auto; /* 비율 유지 */
+    border-radius: 10px; /* 모서리 둥글게 */
+}
+
+/* 위치 섹션 스타일 */
+.location_container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.map_area {
+    flex: 1;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.location_info {
+    flex: 0 0 300px;
+}
+
+.info_box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.info_box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.info_box address {
+    margin-bottom: 1.5rem;
+}
+
+.info_box address p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.time_info {
+    margin-bottom: 1.5rem;
+}
+
+.time_info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.time_info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.time_info li {
+    margin: 0.3rem 0;
+    color: #666;
+}
+
+.naver_map_btn {
+    display: inline-block;
+    background: #03c75a;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.naver_map_btn:hover {
+    background: #02b150;
+}
+
+/* 모바일 대응: 메인 비주얼 */
+@media (max-width: 768px) {
+    .slide {
+        height: 400px; /* 모바일에서의 슬라이드 높이 조정 */
+    }
+
+    .slide_text h2 {
+        font-size: 1.8rem; /* 제목 폰트 크기 감소 */
+    }
+}
+
+/* 모바일 대응: 내비게이션 */
+@media (max-width: 768px) {
+    .gnb {
+        flex-direction: column; /* 세로 정렬 */
+        width: 100%; /* 전체 폭 사용 */
+    }
+
+    .gnb ul {
+        flex-direction: column; /* 세로 정렬 */
+        width: 100%; /* 전체 폭 사용 */
+        padding: 10px 0; /* 여백 추가 */
+    }
+
+    .gnb li {
+        margin: 5px 0; /* 메뉴 항목 간의 간격 */
+        text-align: center; /* 중앙 정렬 */
+    }
+
+    .gnb a {
+        font-size: 1.5rem; /* 글씨 크기 조정 */
+        padding: 8px 0; /* 상하 여백 추가 */
+    }
+}
+
+/* 위치 섹션 스타일 */
+.location_container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.map_area {
+    flex: 1;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.location_info {
+    flex: 0 0 300px;
+}
+
+.info_box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.info_box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.info_box address {
+    margin-bottom: 1.5rem;
+}
+
+.info_box address p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.time_info {
+    margin-bottom: 1.5rem;
+}
+
+.time_info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.time_info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.time_info li {
+    margin: 0.3rem 0;
+    color: #666;
+}
+
+.naver_map_btn {
+    display: inline-block;
+    background: #03c75a;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.naver_map_btn:hover {
+    background: #02b150;
+}
+
+/* 모바일 대응: 섹션 */
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 0; /* 모바일에서 패딩 감소 */
+    }
+
+    .section_title {
+        font-size: 1.5rem; /* 제목 폰트 크기 조정 */
+    }
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .location_container {
+        flex-direction: column;
+    }
+    
+    .map_area {
+        height: 300px;
+    }
+    
+    .location_info {
+        flex: none;
+        width: 100%;
+    }
+}
+
+/* 네이버 지도 링크 스타일 추가 */
+.footer_menu .naver-map-link a {
+    display: flex;
+    align-items: center;
+    background-color: #03c75a; /* 네이버 브랜드 컬러 */
+    color: #fff; /* 흰색 텍스트 */
+    padding: 0.5rem 1rem; /* 패딩 */
+    border-radius: 4px; /* 모서리 둥글게 */
+    transition: background-color 0.3s; /* 배경색 전환 효과 */
+}
+
+.footer_menu .naver-map-link a:hover {
+    background-color: #02b150; /* 호버 시 배경색 변화 */
+}
+
+.footer_menu .naver-icon {
+    width: 20px; /* 아이콘 크기 조정 */
+    height: 20px; /* 아이콘 크기 조정 */
+    margin-left: 5px; /* 텍스트와 아이콘 간의 간격 */
+}
+
+/* 미디어 쿼리: 작은 화면에서의 스타일 */
+@media (max-width: 600px) {
+    .footer_menu ul {
+        flex-direction: column; /* 세로 정렬 */
+    }
+
+    .footer_menu li {
+        margin: 10px 0; /* 메뉴 항목 간의 간격 조정 */
+    }
+}
+
+/* 미디어 쿼리: 작은 화면에서의 스타일 */
+@media (max-width: 600px) {
+    .footer_menu ul {
+        flex-direction: column; /* 세로 정렬 */
+    }
+
+    .footer_menu li {
+        margin: 10px 0; /* 메뉴 항목 간의 간격 조정 */
+    }
+}
+
+/* 반응형 스타일 */
+@media (max-width: 600px) {
+    .footer_menu ul {
+        flex-direction: column; /* 세로 정렬 */
+    }
+
+    .footer_menu li {
+        margin: 10px 0; /* 메뉴 항목 간의 간격 조정 */
+    }
+}
+
+/* 미디어 쿼리: 모바일 대응 스타일 */
+@media (max-width: 768px) {
+    /* 헤더 */
+    .header {
+        padding: 10px 10px; /* 패딩 감소 */
+    }
+
+    .header_inner {
+        flex-direction: column; /* 세로 정렬 */
+        align-items: flex-start; /* 왼쪽 정렬 */
+    }
+
+    /* 로고 */
+    .logo img {
+        height: 35px; /* 로고 크기 조정 */
+    }
+
+    /* 내비게이션 바 */
+    .gnb ul {
+        flex-direction: column; /* 세로 정렬 */
+        width: 100%; /* 전체 폭 사용 */
+        padding: 10px 0; /* 여백 추가 */
+    }
+
+    .gnb li {
+        margin: 5px 0; /* 메뉴 항목 간의 간격 */
+        text-align: center; /* 중앙 정렬 */
+    }
+
+    .gnb a {
+        font-size: 1.5rem; /* 글씨 크기 조정 */
+        padding: 8px 0; /* 상하 여백 추가 */
+    }
+
+/* 추가적인 모바일 스타일 */
+@media (max-width: 480px) {
+    .header {
+        padding: 5px 5px; /* 패딩 더 감소 */
+    }
+
+    .header_inner {
+        padding: 0; /* 패딩 제거 */
+    }
+
+    .footer {
+        padding: 2rem 0; /* 상하 패딩 감소 */
+    }
+
+    .footer_menu a {
+        font-size: 12px; /* 폰트 크기 더 줄임 */
+    }
+
+    .naver-map-link a {
+        padding: 0.3rem 0.8rem; /* 네이버 지도 링크 패딩 조정 */
+    }
+}
+
+/* 블로그 링크 스타일 추가 */
+.blog-link {
+    display: inline-flex; /* 인라인 플렉스 */
+    align-items: center; /* 아이콘과 텍스트 정렬 */
+    color: #000000; /* 블로그 링크 색상 */
+    margin-top: 10px; /* 위쪽 마진 추가 */
+    font-weight: 500; /* 일반 글씨 두께 */
+    text-decoration: none; /* 밑줄 제거 */
+    transition: color 0.3s; /* 색상 전환 효과 */
+}
+
+.blog-link:hover {
+    color: #0056b3; /* 호버 시 색상 변화 */
+}
+
+.blog-icon {
+    width: 20px; /* 아이콘 크기 조정 */
+    height: 20px; /* 아이콘 크기 조정 */
+    margin-left: 6px; /* 텍스트와 아이콘 간의 간격 */
+}
+
+/* 모바일 대응: 푸터 */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1.5rem 0; /* 모바일에서 패딩 감소 */
+    }
+
+    .footer_menu {
+        padding: 10px 0; /* 모바일에서 패딩 감소 */
+    }
+
+    .footer_menu li {
+        margin: 0 10px; /* 메뉴 항목 간의 간격 */
+    }
+
+    .footer_menu a {
+        font-size: 14px; /* 폰트 크기 조정 */
+    }
+}
+
+/* 푸터 스타일 */
+.footer {
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    padding: 0;
+    margin-top: 50px;
+}
+
+/* 상단 메뉴 */
+.footer_menu {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+.footer_menu ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer_menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer_menu a:hover {
+    color: #666;
+}
+
+/* 하단 정보 */
+.footer_info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer_info .contact {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer_info .address {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* 소셜 링크 */
+.social_links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social_links img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.social_links img:hover {
+    opacity: 1;
+}
+
+/* 저작권 */
+.copyright {
+    font-size: 13px;
+    color: #999;
+    margin-top: 20px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .footer_menu ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0 20px;
+    }
+    
+    .footer_menu a {
+        font-size: 13px;
+    }
+    
+    .footer_info {
+        padding: 20px;
+    }
+    
+    .footer_info .contact,
+    .footer_info .address {
+        font-size: 12px;
+        word-break: keep-all;
+        line-height: 1.6;
+    }
+    
+    .social_links {
+        margin: 15px 0;
+    }
+    
+    .social_links img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* 태블릿 반응형 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer_menu ul {
+        padding: 0 30px;
+    }
+    
+    .footer_info {
+        padding: 30px;
+    }
+}
+
+/* 화살표 버튼 숨기기 */
+.swiper-button-next,
+.swiper-button-prev {
+    display: none !important;
+}
+
+/* 화살표 버튼 스타일 수정 */
+.main_visual .swiper-button-next,
+.main_visual .swiper-button-prev {
+    display: none !important;
+}
+
+/* 가운데 구분선 스타일 수정 */
+.header_inner::after {
+    content: '';
+    width: 1px;
+    height: 24px;
+    background-color: #edf2f7; /* 헤더 하단 보더와 동일한 색상 적용 */
+    margin: 0 20px;
+}

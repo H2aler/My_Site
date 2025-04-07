@@ -1,0 +1,358 @@
+/* 폰트 설정 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+#medical {
+    font-family: 'Noto Sans KR', sans-serif; /* 나이스한 폰트 적용 */
+}
+
+/* 섹션 스타일 */
+#medical .section {
+    padding: 60px 0; /* 여백 증가 */
+    background: linear-gradient(to bottom, #f9f9f9, #ffffff); /* 그라데이션 배경 추가 */
+    overflow: hidden;
+    width: 100%;
+}
+
+#medical .section_inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px; /* 여백 증가 */
+}
+
+#medical .section_title {
+    text-align: center;
+    margin-bottom: 40px; /* 여백 증가 */
+    font-size: 32px; /* 크기 증가 */
+    color: #333;
+    position: relative;
+    padding-bottom: 15px; /* 밑줄을 위한 패딩 */
+}
+
+/* 섹션 타이틀 밑줄 효과 */
+#medical .section_title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    /*background: linear-gradient(to right, #007bff, #00a6ff);*/
+    border-radius: 2px;
+}
+
+#medical .swiper-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+#medical .swiper-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto; /* 높이 자동 조정 */
+}
+
+#medical .swiper-slide {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px; /* 간격 증가 */
+    padding: 30px; /* 패딩 증가 */
+    background: #fff;
+    border-radius: 15px; /* 더 부드러운 모서리 */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* 그림자 개선 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 슬라이드 호버 효과 */
+#medical .swiper-slide:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+#medical .slide-image {
+    flex: 0 0 45%; /* 이미지 비율 증가 */
+    max-width: 450px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 0;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#medical .slide-text {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; /* 텍스트 요소들 사이 간격 */
+}
+
+/* 텍스트 라인 기본 스타일 */
+#medical .text-line {
+    opacity: 0;
+    transform: translateX(-20px);
+    white-space: nowrap; /* 한 줄로 표시 */
+    overflow: hidden; /* 넘치는 텍스트 숨김 */
+    display: block;
+}
+
+/* 제목 스타일 */
+#medical h3 {
+    font-size: 36px; /* 크기 증가 */
+    color: #222;
+    margin: 0;
+    line-height: 1.3;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#medical h3 .text-line {
+    animation: typeText 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+/* 부제목 스타일 */
+#medical .small-title {
+    font-size: 24px;
+    color: #007bff;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee; /* 구분선 추가 */
+}
+
+#medical .small-title .text-line {
+    animation: typeText 0.8s ease forwards;
+    animation-delay: 0.6s;
+}
+
+/* 본문 텍스트 컨테이너 */
+#medical .description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* 문단 사이 간격 */
+    width: 100%;
+}
+
+/* 본문 스타일 */
+#medical p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin: 0;
+}
+
+#medical p .text-line {
+    animation: typeText 0.8s ease forwards;
+}
+
+#medical p .text-line:nth-child(1) {
+    animation-delay: 1s;
+}
+
+#medical p .text-line:nth-child(2) {
+    animation-delay: 1.4s;
+}
+
+/* 타이핑 애니메이션 */
+@keyframes typeText {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 활성 슬라이드 애니메이션 제어 */
+#medical .swiper-slide-active .text-line {
+    animation-play-state: running;
+}
+
+/* 비활성 슬라이드 리셋 */
+#medical .swiper-slide:not(.swiper-slide-active) .text-line {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: none;
+}
+
+/* 추가 내비게이션 버튼 스타일 */
+#medical .swiper-button-next, 
+#medical .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+#medical .swiper-button-next:hover,
+#medical .swiper-button-prev:hover {
+    background-color: #007bff;
+    transform: scale(1.1);
+}
+
+#medical .swiper-button-next::after,
+#medical .swiper-button-prev::after {
+    font-size: 20px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+#medical .swiper-button-next:hover::after,
+#medical .swiper-button-prev:hover::after {
+    color: #fff;
+}
+
+/* 페이징 스타일 */
+#medical .swiper-pagination {
+    bottom: -30px;
+}
+
+#medical .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+#medical .swiper-pagination-bullet-active {
+    width: 30px;
+    border-radius: 5px;
+    background: #007bff;
+}
+
+/* 슬라이드 애니메이션 추가 */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    #medical .section {
+        padding: 40px 0;
+    }
+
+    #medical .section_title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    #medical .swiper-slide {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #medical .slide-image {
+        width: 100%;
+        height: 220px;
+        max-width: none;
+    }
+
+    #medical h3 {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    #medical .small-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    #medical .description {
+        gap: 8px;
+    }
+
+    #medical p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* 모바일에서도 애니메이션 유지 */
+    #medical h3,
+    #medical .small-title,
+    #medical p {
+        transform: translateY(-20px);
+    }
+
+    @keyframes slideInText {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* 모바일에서 네비게이션 버튼 스타일 변경 */
+    #medical .swiper-button-next,
+    #medical .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        opacity: 0.8;
+    }
+
+    #medical .slide-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    #medical .text-line {
+        text-align: center;
+        transform: translateY(-20px);
+    }
+
+    @keyframes typeText {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* 애니메이션 효과 추가 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#medical .swiper-slide-active {
+    animation: fadeIn 0.8s ease forwards;
+}

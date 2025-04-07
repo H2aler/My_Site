@@ -1,0 +1,139 @@
+/* 전체 섹션을 중앙 정렬하도록 설정 */
+#medical-team {
+    display: flex; /* Flexbox 레이아웃 */
+    flex-direction: column; /* 세로 방향 정렬 */
+    align-items: center; /* 수평 중앙 정렬 */
+    justify-content: center; /* 세로 중앙 정렬 */
+    min-height: 100vh; /* 화면 높이의 100% */
+    padding: 20px; /* 여백 */
+}
+
+/* 의료진 소개 섹션 스타일 */
+.medical-team {
+    display: flex; /* Flexbox 레이아웃 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    flex-direction: column; /* 세로 방향 정렬 */
+    padding: 40px; /* 여백 */
+    background-color: #ffffff; /* 배경색 */
+    border-radius: 15px; /* 모서리 둥글게 */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* 부드러운 그림자 */
+    margin: 20px auto; /* 위아래 여백 및 중앙 정렬 */
+    max-width: 800px; /* 최대 너비 설정 */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* 효과 전환 */
+}
+
+.medical-team:hover {
+    transform: scale(1.01); /* 마우스 오버 시 확대 효과를 약하게 */
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15); /* 그림자 강화 */
+}
+
+/* 인사말 스타일 */
+.intro {
+    text-align: center; /* 중앙 정렬 */
+    margin-bottom: 40px; /* 인사말과 사진 간격 */
+}
+
+.intro h2 {
+    font-size: 2.5rem; /* 제목 크기 */
+    color: #333; /* 제목 색상 */
+    margin: 20px 0; /* 위아래 여백 */
+    font-weight: bold; /* 볼드체 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* 텍스트 그림자 */
+}
+
+.greeting {
+    font-size: 1.5rem; /* 인사말 텍스트 크기 */
+    color: #007BFF; /* 인사말 색상 */
+    font-weight: bold; /* 볼드체 */
+    margin: 15px 0; /* 위아래 여백 */
+    padding: 10px; /* 패딩 추가 */
+    background-color: rgba(0, 123, 255, 0.1); /* 배경색 추가 */
+    border-radius: 10px; /* 모서리 둥글게 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* 그림자 추가 */
+    transition: transform 0.2s ease, background-color 0.3s ease; /* 효과 전환 */
+}
+
+.greeting:hover {
+    transform: translateY(-2px); /* 마우스 오버 시 위로 이동 효과를 약하게 */
+    background-color: rgba(0, 123, 255, 0.2); /* 배경색 변화 */
+}
+
+/* 미션 텍스트 스타일 */
+.mission {
+    font-size: 1.2rem; /* 설명 텍스트 크기 */
+    color: #555; /* 설명 텍스트 색상 */
+    line-height: 1.6; /* 줄 간격 */
+    margin: 20px 0; /* 위아래 여백 */
+    font-style: italic; /* 이탤릭체 */
+    transition: transform 0.2s ease; /* 효과 전환 */
+}
+
+.mission:hover {
+    transform: translateY(-1px); /* 마우스 오버 시 약간 위로 이동 효과를 약하게 */
+}
+
+/* 사진 영역 스타일 */
+.medical-photo {
+    flex: 1; /* 사진 영역 비율 */
+    display: flex; /* Flexbox 레이아웃 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    margin-bottom: 30px; /* 사진과 텍스트 간의 간격 */
+}
+
+.medical-photo img {
+    width: 100%; /* 이미지 너비 100% */
+    max-width: 200px; /* 최대 너비를 200px로 줄임 */
+    height: auto; /* 비율 유지 */
+    border-radius: 15px; /* 모서리 둥글게 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* 이미지 그림자 */
+}
+
+
+/* 정보 영역 스타일 */
+.medical-info {
+    flex: 2; /* 정보 영역 비율 */
+    display: flex; /* Flexbox 레이아웃 */
+    flex-direction: column; /* 세로 방향 정렬 */
+    align-items: center; /* 수평 중앙 정렬 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    margin-bottom: 40px; /* 정보 영역과 자격증 리스트 간격 늘리기 */
+}
+
+.medical-info strong {
+    font-weight: bold; /* 굵은 글씨체 */
+    color: #333; /* 글자 색상 */
+}
+
+.medical-info p,
+.medical-info li {
+    font-weight: normal; /* 일반 글씨체 */
+    color: #555; /* 일반 글씨 색상 */
+    font-size: 1rem; /* 일반 글씨 크기 */
+    margin: 10px 0; /* 위아래 여백 */
+}
+
+/* 자격증 리스트 스타일 */
+.qualifications {
+    list-style-type: none; /* 기본 리스트 스타일 제거 */
+    padding: 0; /* 패딩 제거 */
+    margin: 20px 0; /* 위아래 마진 추가하여 간격 늘리기 */
+}
+
+.qualifications li {
+    font-size: 1rem; /* 리스트 텍스트 크기 */
+    color: #444; /* 리스트 텍스트 색상 */
+    margin-bottom: 15px; /* 아래 여백 늘리기 */
+    position: relative; /* 리스트 아이템 위치 */
+    padding-left: 30px; /* 왼쪽 패딩 추가 */
+}
+
+.qualifications li:before {
+    content: "•"; /* 가운데 점 문자 */
+    font-size: 1.5rem; /* 점 크기 조정 */
+    position: absolute; /* 절대 위치 */
+    left: 0; /* 왼쪽 위치 */
+    color: rgba(0, 0, 0, 0.7); /* 불투명한 검은색 */
+    top: 50%; /* 수직 중앙 정렬 */
+    transform: translateY(-50%); /* 점을 수직 중앙으로 맞춤 */
+}
